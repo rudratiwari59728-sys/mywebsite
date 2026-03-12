@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rudra Tiwari Official Website</title>
-<style>
-body{font-family: Arial; background:#f2f2f2; text-align:center; margin:0;}
-.header{background:#222; color:white; padding:25px;}
-img{width:200px; border-radius:50%; margin-top:20px; box-shadow:0 0 10px gray;}
-.container{padding:20px;}
-</style>
+    <title>Rudra Tiwari Official Website</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: #f4f4f4; margin: 0; text-align: center; }
+        
+        /* Navigation Bar */
+        nav { background: #222; padding: 15px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 18px; }
+        nav a:hover { color: #00bcd4; } /* Link par mouse le jane se rang badlega */
+
+        .header { background: #333; color: white; padding: 60px 20px; }
+        .header h1 { margin: 0; font-size: 36px; }
+        
+        .container { padding: 40px 20px; background: white; margin: 20px auto; width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        img { width: 180px; border-radius: 50%; border: 5px solid #00bcd4; margin-bottom: 20px; }
+        h2 { color: #333; }
+        p { color: #666; line-height: 1.6; }
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>Rudra Tiwari</h1>
-<p>Welcome to My Personal Website</p>
-</div>
-<div class="container">
-<img src="photo.jpg">
-<h2>About Me</h2>
-<p>Hello, my name is Rudra Tiwari.</p>
-<p>I am a Full Stack Developer.</p>
-<p>I know Python, Django, HTML, CSS and JavaScript.</p>
-</div>
-</div style="background-color: #333; padding: 10px; text-align: center;">
-  <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
-  <a href="about.html" style="color: white; text-decoration: none;">About</a>
-</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="header">
+        <h1>Rudra Tiwari</h1>
+        <p>Welcome to My Personal Website</p>
+    </div>
+
+    <div class="container">
+        <img src="photo.jpg" alt="Rudra's Photo">
+        <h2>About Me</h2>
+        <p>Hello, my name is <strong>Rudra Tiwari</strong>.</p>
+        <p>I am a <strong>Full Stack Developer</strong>.</p>
+        <p>I know Python, Django, HTML, CSS and JavaScript.</p>
+    </div>
+
+</body>
 </html>
