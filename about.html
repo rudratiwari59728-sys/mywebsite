@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Rudra Tiwari</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Isme bhi wahi same CSS copy-paste karni hai jo index mein hai */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: linear-gradient(-45deg, #ff3e81, #ff6b6b, #48dbfb, #1dd1a1); background-size: 400% 400%; animation: bg 10s ease infinite; min-height: 100vh; color: white; text-align: center; }
+        @keyframes bg { 0% {background-position: 0% 50%;} 50% {background-position: 100% 50%;} 100% {background-position: 0% 50%;} }
+        nav { background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); padding: 15px; display: flex; justify-content: space-around; border-bottom: 1px solid rgba(255,255,255,0.2); }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 15px; border-radius: 20px; }
+        .glass { background: rgba(255,255,255,0.15); backdrop-filter: blur(15px); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.3); max-width: 600px; margin: 50px auto; }
+        h2 { color: #ffd700; }
+    </style>
 </head>
 <body>
     <nav>
-        <div class="logo">RUDRA MARKET</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="main-container">
-        <div class="glass-card">
-            <h1 class="welcome-title">About Developer</h1>
-            <div style="font-size: 1.2rem; line-height: 1.8;">
-                <p>Namaste! Mera naam hai <span style="color: #ffd700; font-weight: bold;">Rudra Tiwari</span>.</p>
-                <p>Maine yeh website apne users ko ek behtareen experience dene ke liye design ki hai.</p>
-                <hr style="margin: 20px 0; border: 0.5px solid rgba(255,255,255,0.2);">
-                <h3>Website Maker: Rudra Tiwari</h3>
-            </div>
-        </div>
+    <div class="glass">
+        <h2>About This Website</h2>
+        <br>
+        <p>Yeh website Rudra Super Market ki jankari ke liye banayi gayi hai.</p>
+        <br>
+        <p><b>Maker:</b> Rudra Tiwari</p>
     </div>
-    <footer>Created by: <b>Rudra Tiwari</b></footer>
 </body>
 </html>
