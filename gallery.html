@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<title>Gallery</title>
-
-<style>
-body{
-font-family: Arial;
-text-align: center;
-background:#f2f2f2;
-}
-
-.gallery img{
-width:200px;
-margin:10px;
-border-radius:10px;
-box-shadow:0 0 10px gray;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Rudra Super Market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-<h1>My Gallery</h1>
+    <section class="gallery-container">
+        <h2 class="gradient-text">Our Gallery</h2>
+        <div class="grid">
+            <div class="img-box"><p>Photo 1</p></div>
+            <div class="img-box"><p>Photo 2</p></div>
+            <div class="img-box"><p>Photo 3</p></div>
+            <div class="img-box"><p>Photo 4</p></div>
+            <div class="img-box"><p>Photo 5</p></div>
+            <div class="img-box"><p>Photo 6</p></div>
+            <div class="img-box"><p>Photo 7</p></div>
+            <div class="img-box"><p>Photo 8</p></div>
+            <div class="img-box"><p>Photo 9</p></div>
+            <div class="img-box"><p>Photo 10</p></div>
+        </div>
+    </section>
 
-<div class="gallery">
-<img src="img1.jpg">
-<img src="img2.jpg">
-<img src="img3.jpg">
-<img src="img4.jpg">
-</div>
-
+    <footer>
+        <p>Created by: <strong>Rudra Tiwari</strong></p>
+    </footer>
 </body>
 </html>
