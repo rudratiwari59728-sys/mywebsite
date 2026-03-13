@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Rudra Market</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rudra Super Market - Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: linear-gradient(-45deg, #ff3e81, #ff6b6b, #48dbfb, #1dd1a1); background-size: 400% 400%; animation: bg 10s ease infinite; min-height: 100vh; color: white; text-align: center; }
+        @keyframes bg { 0% {background-position: 0% 50%;} 50% {background-position: 100% 50%;} 100% {background-position: 0% 50%;} }
+        nav { background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); padding: 15px; display: flex; justify-content: space-around; border-bottom: 1px solid rgba(255,255,255,0.2); position: sticky; top: 0; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 15px; border-radius: 20px; transition: 0.3s; }
+        nav a:hover { background: white; color: #ff3e81; }
+        .hero { padding: 50px 20px; }
+        .glass { background: rgba(255,255,255,0.15); backdrop-filter: blur(15px); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.3); max-width: 600px; margin: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        h1 { font-size: 2.5rem; text-transform: uppercase; margin-bottom: 15px; background: linear-gradient(to right, #fff, #ffd700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .box { width: 100%; height: 250px; background: rgba(0,0,0,0.2); border: 2px dashed #fff; margin: 20px 0; border-radius: 15px; display: flex; align-items: center; justify-content: center; }
+        footer { margin-top: 30px; font-size: 14px; opacity: 0.8; }
+    </style>
 </head>
 <body>
     <nav>
-        <div class="logo">RUDRA MARKET</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="main-container">
-        <div class="glass-card">
-            <h1 class="welcome-title">Our Gallery</h1>
-            <div class="gallery-grid">
-                <div class="img-box">Photo 1</div>
-                <div class="img-box">Photo 2</div>
-                <div class="img-box">Photo 3</div>
-                <div class="img-box">Photo 4</div>
-                <div class="img-box">Photo 5</div>
-                <div class="img-box">Photo 6</div>
-                <div class="img-box">Photo 7</div>
-                <div class="img-box">Photo 8</div>
-                <div class="img-box">Photo 9</div>
-                <div class="img-box">Photo 10</div>
-            </div>
+    <div class="hero">
+        <div class="glass">
+            <h1>Welcome in Rudra Super Market</h1>
+            <p>Sabse Sasta, Sabse Accha!</p>
+            <div class="box">📸 Photo Yahan Add Karein</div>
+            <p>Created by: <b>Rudra Tiwari</b></p>
         </div>
     </div>
-    <footer>Created by: <b>Rudra Tiwari</b></footer>
+    <footer>© 2026 Rudra Market</footer>
 </body>
 </html>
