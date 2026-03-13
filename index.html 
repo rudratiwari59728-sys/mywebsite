@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rudra Super Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Rudra Market</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="gradient-text">Welcome to Rudra Super Market</h1>
+        <p>Aapki zarurat ka har saman, ab ek hi jagah par!</p>
+        
+        <div class="photo-placeholder">
+            <p>Aapki Photo Yahan Ayegi (Add img tag here later)</p>
+            </div>
+    </header>
+
+    <footer>
+        <p>Created by: <strong>Rudra Tiwari</strong></p>
+    </footer>
+</body>
+</html>
