@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra Super Market - Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { 
+            background: linear-gradient(-45deg, #ff3e81, #ff6b6b, #48dbfb, #1dd1a1); 
+            background-size: 400% 400%; 
+            animation: bg 10s ease infinite; 
+            min-height: 100vh; 
+            color: white; 
+            text-align: center; 
+        }
+
+        @keyframes bg { 
+            0% {background-position: 0% 50%;} 
+            50% {background-position: 100% 50%;} 
+            100% {background-position: 0% 50%;} 
+        }
+
+        nav { 
+            background: rgba(0,0,0,0.2); 
+            backdrop-filter: blur(10px); 
+            padding: 20px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px;
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            padding: 8px 15px; 
+            border-radius: 20px; 
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        nav a:hover { background: white; color: #ff3e81; }
+
+        .hero { padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+
+        .glass { 
+            background: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(15px); 
+            border-radius: 25px; 
+            padding: 40px 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            max-width: 90%; 
+            width: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+        }
+
+        h1 { 
+            font-size: 2rem; 
+            margin-bottom: 10px; 
+            background: linear-gradient(to right, #fff, #ffd700); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .photo-box { 
+            width: 100%; 
+            height: 200px; 
+            background: rgba(0,0,0,0.2); 
+            border: 2px dashed #fff; 
+            margin: 20px 0; 
+            border-radius: 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: bold;
+        }
+
+        footer { margin-top: 30px; font-size: 12px; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="glass">
+            <h1>Welcome in Rudra Super Market</h1>
+            <p style="font-size: 14px; letter-spacing: 1px;">Quality aur Bharosa, Ek hi jagah!</p>
+            
+            <div class="photo-box">
+                <p>📸 Photo Yahan Ayegi</p>
+            </div>
+
+            <p style="margin-top: 15px;">Created by: <br> <strong style="font-size: 1.2rem; color: #ffd700;">Rudra Tiwari</strong></p>
+        </div>
+    </div>
+
+    <footer>© 2026 Rudra Super Market</footer>
+
+</body>
+</html>
