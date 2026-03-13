@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rudra Tiwari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-section">
+        <h2 class="gradient-text">Contact Me</h2>
+        <div class="card">
+            <p>Mujhse judne ke liye niche diye gaye button par click karein:</p>
+            <br>
+            <a href="https://instagram.com/rudratiwaris" class="insta-btn" target="_blank">Follow on Instagram @rudratiwaris</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by: <strong>Rudra Tiwari</strong></p>
+    </footer>
+</body>
+</html>
