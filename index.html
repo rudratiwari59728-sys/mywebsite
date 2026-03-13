@@ -1,66 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rudra Tiwari Official</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; margin: 0; text-align: center; color: #333; }
-        
-        /* Navigation Bar */
-        nav { background: #1a1a1a; padding: 15px; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; transition: 0.3s; }
-        nav a:hover { color: #e1306c; }
-
-        /* Header Section */
-        .header { background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 80px 20px; }
-        .header h1 { margin: 0; font-size: 40px; letter-spacing: 2px; }
-        
-        /* Main Container */
-        .container { padding: 40px 20px; background: white; margin: -50px auto 40px; width: 85%; max-width: 800px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        
-        /* Profile Image */
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.2); margin-bottom: 20px; object-fit: cover; }
-        
-        /* Motivation Box */
-        .motivation-box { background: #fff5f7; border-left: 5px solid #e1306c; padding: 20px; margin: 30px 0; text-align: left; border-radius: 0 10px 10px 0; }
-        .motivation-box p { font-style: italic; line-height: 1.8; color: #555; margin: 5px 0; }
-
-        /* Instagram Button */
-        .insta-btn { display: inline-block; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; transition: transform 0.3s; }
-        .insta-btn:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4); }
-        
-        h2, h3 { color: #1a1a1a; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
+    <h2>Market<span>Hub</span></h2>
     <nav>
         <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
     </nav>
+</header>
 
-    <div class="header">
-        <h1>RUDRA TIWARI</h1>
-        <p>Turning Dreams into Reality</p>
-    </div>
+<section class="hero">
+    <h1>Welcome to Our Digital Market</h1>
+    <p>Premium Products. Best Quality. Fast Delivery.</p>
+</section>
 
-    <div class="container">
-        <img src="photo.jpg" alt="Rudra's Photo" class="profile-img">
-        
-        <h2>Welcome to My Space</h2>
-        <p>I am a dreamer, a learner, and someone who believes in the power of consistency. My journey is about growth, and my hobbies keep me inspired every single day.</p>
-
-        <div class="motivation-box">
-            <h3>Daily Motivation</h3>
-            <p>1. Success is not what you see, it's the grind behind the scenes.</p>
-            <p>2. Your only competition is the person you were yesterday.</p>
-            <p>3. Hard work beats talent when talent doesn't work hard.</p>
-            <p>4. Don't stop when you're tired, stop when you're done.</p>
-            <p>5. Dream big, work hard, stay focused, and surround yourself with good people.</p>
+<div class="container">
+    <h2 style="text-align:center;">Trending Products</h2>
+    <div class="market-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>$199</p>
+            <a href="#" class="btn">Buy Now</a>
         </div>
-
-        <p>Connect with me on Social Media:</p>
-        <a href="https://www.instagram.com/rudratiwaris" target="_blank" class="insta-btn">Follow me on Instagram</a>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>$99</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+            <h3>Sneakers</h3>
+            <p>$120</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
     </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Market Hub | All Rights Reserved</p>
+</footer>
 
 </body>
-</html>
+    </html>
