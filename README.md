@@ -1,3 +1,3 @@
-# mywebsite
+# my portfolio
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
