@@ -2,118 +2,121 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Intro</title>
+<title>My 50 Photo Gallery</title>
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body{
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
   color:white;
-  overflow:hidden;
+  text-align:center;
 }
 
 /* Animated Background */
 body::before{
   content:"";
-  position:absolute;
-  width:200%;
-  height:200%;
-  background: linear-gradient(45deg, #ff416c, #ff4b2b, #1e90ff, #00c9a7);
-  background-size: 400% 400%;
-  animation: moveBg 10s infinite alternate;
+  position:fixed;
+  width:100%;
+  height:100%;
+  background: linear-gradient(45deg, #ff512f, #dd2476, #1e90ff, #00c9a7);
+  background-size:400% 400%;
+  animation:bgMove 10s infinite alternate;
   z-index:-1;
 }
 
-@keyframes moveBg{
+@keyframes bgMove{
   0%{background-position:0% 50%;}
   100%{background-position:100% 50%;}
 }
 
-/* Card */
-.container{
-  text-align:center;
-  background: rgba(0,0,0,0.5);
-  padding:40px;
-  border-radius:20px;
-  backdrop-filter: blur(10px);
-  animation: fadeIn 1.5s ease;
+h1{
+  padding:20px;
+  font-size:40px;
 }
 
-/* Image */
-.container img{
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  border:4px solid white;
-  margin-bottom:20px;
+/* Gallery Grid */
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:15px;
+  padding:20px;
+}
+
+/* Images */
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
   transition:0.4s;
 }
 
-.container img:hover{
-  transform: scale(1.1) rotate(5deg);
-}
-
-/* Text */
-h1{
-  font-size:35px;
-}
-
-p{
-  margin-top:10px;
-  font-size:18px;
-  opacity:0.8;
-}
-
-/* Button */
-button{
-  margin-top:20px;
-  padding:10px 20px;
-  border:none;
-  border-radius:25px;
-  background:#ff4b2b;
-  color:white;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-button:hover{
-  background:#ff416c;
+.gallery img:hover{
   transform:scale(1.1);
+  box-shadow:0 0 20px black;
 }
 
-/* Animation */
-@keyframes fadeIn{
-  from{opacity:0; transform:translateY(30px);}
-  to{opacity:1; transform:translateY(0);}
+/* Lightbox */
+#lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
 }
 
+#lightbox img{
+  width:70%;
+  border-radius:10px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <img src="https://picsum.photos/200" alt="profile">
+<h1>🔥 My Photo Gallery 🔥</h1>
 
-  <h1>Hello, I'm Rudra 👋</h1>
-  <p>Beginner Web Developer | Learning HTML, CSS & JS</p>
+<div class="gallery" id="gallery"></div>
 
-  <button onclick="showMsg()">Click Me</button>
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeImg()">
+  <img id="lightbox-img">
 </div>
 
 <script>
-function showMsg(){
-  alert("Welcome to my website bhai 🔥");
+
+/* Load 50 Images */
+let gallery = document.getElementById("gallery");
+
+for(let i=1;i<=50;i++){
+  let img = document.createElement("img");
+  img.src = i + ".jpg";   // 👈 1.jpg, 2.jpg ... 50.jpg
+
+  img.onclick = function(){
+    openImg(this.src);
+  }
+
+  gallery.appendChild(img);
 }
+
+/* Lightbox */
+function openImg(src){
+  document.getElementById("lightbox").style.display="flex";
+  document.getElementById("lightbox-img").src=src;
+}
+
+function closeImg(){
+  document.getElementById("lightbox").style.display="none";
+}
+
 </script>
 
 </body>
